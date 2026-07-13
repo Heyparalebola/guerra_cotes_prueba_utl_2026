@@ -1,0 +1,377 @@
+{
+  "candidate": {
+    "name": "Christian Andres Guerra",
+    "email": "christianandresguerra@gmail.com",
+    "repository": "git@github.com:Heyparalebola/guerra_cotes_prueba_utl_2026.git"
+  },
+  "files": {
+    "README.md": {
+      "exists": true,
+      "bytes": 5685
+    },
+    "requirements.txt": {
+      "exists": true,
+      "bytes": 63
+    },
+    "scraper/scraper.py": {
+      "exists": true,
+      "bytes": 28379
+    },
+    "db/schema.sql": {
+      "exists": true,
+      "bytes": 3225
+    },
+    "db/etl.py": {
+      "exists": true,
+      "bytes": 3667
+    },
+    "sql/tarea_3_1.sql": {
+      "exists": true,
+      "bytes": 1230
+    },
+    "sql/tarea_3_2.sql": {
+      "exists": true,
+      "bytes": 1590
+    },
+    "sql/tarea_3_3.sql": {
+      "exists": true,
+      "bytes": 2869
+    },
+    "dashboard/export_data.py": {
+      "exists": true,
+      "bytes": 6215
+    },
+    "dashboard/index.html": {
+      "exists": true,
+      "bytes": 1776481
+    },
+    "dashboard/data.json": {
+      "exists": true,
+      "bytes": 2306225
+    },
+    "viz/heatmap.py": {
+      "exists": true,
+      "bytes": 3302
+    },
+    "viz/scatter.py": {
+      "exists": true,
+      "bytes": 2970
+    },
+    "viz/heatmap_municipios.png": {
+      "exists": true,
+      "bytes": 109426
+    },
+    "viz/scatter_ca_se.png": {
+      "exists": true,
+      "bytes": 196579
+    },
+    "outputs/evaluation_manifest.example.json": {
+      "exists": true,
+      "bytes": 297
+    },
+    "db/puestos_2026.db": {
+      "exists": true,
+      "bytes": 306663424,
+      "publish_as_release_asset": true
+    }
+  },
+  "municipalities": {
+    "CHIQUINQUIRA": {
+      "name": "CHIQUINQUIRA",
+      "ca_rows": 45731,
+      "se_rows": 156097,
+      "total_rows": 201828,
+      "polling_places": 12,
+      "tables_expected": 139,
+      "tables_loaded": 139,
+      "reporting_units": 139
+    },
+    "DUITAMA": {
+      "name": "DUITAMA",
+      "ca_rows": 94423,
+      "se_rows": 322301,
+      "total_rows": 416724,
+      "polling_places": 22,
+      "tables_expected": 287,
+      "tables_loaded": 287,
+      "reporting_units": 287
+    },
+    "PAIPA": {
+      "name": "PAIPA",
+      "ca_rows": 31255,
+      "se_rows": 106685,
+      "total_rows": 137940,
+      "polling_places": 7,
+      "tables_expected": 95,
+      "tables_loaded": 95,
+      "reporting_units": 95
+    },
+    "SOGAMOSO": {
+      "name": "SOGAMOSO",
+      "ca_rows": 99029,
+      "se_rows": 338023,
+      "total_rows": 437052,
+      "polling_places": 18,
+      "tables_expected": 301,
+      "tables_loaded": 301,
+      "reporting_units": 301
+    },
+    "TUNJA": {
+      "name": "TUNJA",
+      "ca_rows": 139496,
+      "se_rows": 476152,
+      "total_rows": 615648,
+      "polling_places": 26,
+      "tables_expected": 424,
+      "tables_loaded": 424,
+      "reporting_units": 424
+    },
+    "VILLA DE LEIVA": {
+      "name": "VILLA DE LEIVA",
+      "ca_rows": 13818,
+      "se_rows": 47166,
+      "total_rows": 60984,
+      "polling_places": 2,
+      "tables_expected": 42,
+      "tables_loaded": 42,
+      "reporting_units": 42
+    }
+  },
+  "table_counts": {
+    "municipalities": 6,
+    "polling_places": 87,
+    "parties": 83,
+    "candidates": 1361,
+    "results": 1870176,
+    "raw_payloads": 0,
+    "load_log": 7887
+  },
+  "data_quality": {
+    "party_candidate_groups_compared": 7917,
+    "party_candidate_groups_matching": 7917,
+    "result_granularity": "table",
+    "individual_table_rows": 1870176
+  },
+  "senate_leaders": {
+    "CHIQUINQUIRA": {
+      "name": "CHIQUINQUIRA",
+      "party_name": "ALIANZA VERDE",
+      "party_code": "57",
+      "votes": 4993
+    },
+    "DUITAMA": {
+      "name": "DUITAMA",
+      "party_name": "PACTO HISTORICO",
+      "party_code": "92",
+      "votes": 15423
+    },
+    "PAIPA": {
+      "name": "PAIPA",
+      "party_name": "ALIANZA VERDE",
+      "party_code": "57",
+      "votes": 4161
+    },
+    "SOGAMOSO": {
+      "name": "SOGAMOSO",
+      "party_name": "PACTO HISTORICO",
+      "party_code": "92",
+      "votes": 13957
+    },
+    "TUNJA": {
+      "name": "TUNJA",
+      "party_name": "PACTO HISTORICO",
+      "party_code": "92",
+      "votes": 20651
+    },
+    "VILLA DE LEIVA": {
+      "name": "VILLA DE LEIVA",
+      "party_name": "CENTRO DEMOCRATICO",
+      "party_code": "10",
+      "votes": 1428
+    }
+  },
+  "sql": {
+    "tarea_3_1": {
+      "status": "OK",
+      "rows": 87,
+      "preview": [
+        {
+          "municipality": "CHIQUINQUIRA",
+          "place_code": "0700067010003",
+          "place_name": "COL.LICEO NAL. JOSE JOAQUIN C",
+          "ca_votes": 550,
+          "se_votes": 614,
+          "green_ratio": 1.116
+        },
+        {
+          "municipality": "CHIQUINQUIRA",
+          "place_code": "0700067010002",
+          "place_name": "I.T.I.JULIO FLOREZ SECCION BT",
+          "ca_votes": 526,
+          "se_votes": 583,
+          "green_ratio": 1.108
+        },
+        {
+          "municipality": "CHIQUINQUIRA",
+          "place_code": "0700067990020",
+          "place_name": "SASA MOYAVITA",
+          "ca_votes": 86,
+          "se_votes": 95,
+          "green_ratio": 1.105
+        },
+        {
+          "municipality": "CHIQUINQUIRA",
+          "place_code": "0700067010004",
+          "place_name": "NORMAL SUPERIOR SOR JOSEFA DEL CASTILLO",
+          "ca_votes": 567,
+          "se_votes": 604,
+          "green_ratio": 1.065
+        },
+        {
+          "municipality": "CHIQUINQUIRA",
+          "place_code": "0700067010001",
+          "place_name": "U.PEDAG. Y TECNOLOGICA DE COL",
+          "ca_votes": 510,
+          "se_votes": 536,
+          "green_ratio": 1.051
+        }
+      ]
+    },
+    "tarea_3_2": {
+      "status": "OK",
+      "rows": 5274,
+      "preview": [
+        {
+          "municipality": "PAIPA",
+          "place_code": "0700181010002",
+          "place_name": "I.E.EL ROSARIO SEDE CAMPESTRE",
+          "table_number": "7",
+          "chamber": "SE",
+          "party_code": "9",
+          "party_name": "PARTIDO DE LA UNION POR LA GENTE - PARTIDO DE LA U",
+          "candidate_code": "8",
+          "candidate_name": "JOHN MOISES BESAILE FAYAD",
+          "candidate_votes": 100,
+          "party_votes": 100,
+          "share_of_party": 1.0
+        },
+        {
+          "municipality": "PAIPA",
+          "place_code": "0700181990001",
+          "place_name": "PALERMO",
+          "table_number": "3",
+          "chamber": "SE",
+          "party_code": "3",
+          "party_name": "PARTIDO CONSERVADOR COLOMBIANO",
+          "candidate_code": "6",
+          "candidate_name": "SOLEDAD TAMAYO TAMAYO",
+          "candidate_votes": 34,
+          "party_votes": 34,
+          "share_of_party": 1.0
+        },
+        {
+          "municipality": "PAIPA",
+          "place_code": "0700181990038",
+          "place_name": "PANTANO DE VARGAS",
+          "table_number": "1",
+          "chamber": "SE",
+          "party_code": "43",
+          "party_name": "AHORA COLOMBIA",
+          "candidate_code": "4",
+          "candidate_name": "GLORIA ELSY DIAZ MARTINEZ",
+          "candidate_votes": 24,
+          "party_votes": 24,
+          "share_of_party": 1.0
+        },
+        {
+          "municipality": "VILLA DE LEIVA",
+          "place_code": "0700139000000",
+          "place_name": "COLISEO MUNICIPAL",
+          "table_number": "14",
+          "chamber": "CA",
+          "party_code": "15",
+          "party_name": "PARTIDO POLITICO DIGNIDAD & COMPROMISO",
+          "candidate_code": "106",
+          "candidate_name": "EDGAR FERNANDO FARFAN CORZO",
+          "candidate_votes": 24,
+          "party_votes": 24,
+          "share_of_party": 1.0
+        },
+        {
+          "municipality": "SOGAMOSO",
+          "place_code": "0700277020004",
+          "place_name": "IE INSEANDES",
+          "table_number": "10",
+          "chamber": "SE",
+          "party_code": "17",
+          "party_name": "MOVIMIENTO SALVACION NACIONAL",
+          "candidate_code": "3",
+          "candidate_name": "JUAN CAMILO OSTOS ROMERO",
+          "candidate_votes": 20,
+          "party_votes": 20,
+          "share_of_party": 1.0
+        }
+      ]
+    },
+    "tarea_3_3": {
+      "status": "OK",
+      "rows": 5,
+      "preview": [
+        {
+          "candidate_code": "106",
+          "candidate_name": "YAMIT NOE HURTADO NEIRA",
+          "party_code": "5",
+          "party_name": "ALIANZA VERDE",
+          "attributed_se_votes": 11412.94,
+          "candidate_ca_votes": 12866,
+          "party_se_votes_context": 43107.0,
+          "tables_used": 1288
+        },
+        {
+          "candidate_code": "101",
+          "candidate_name": "JAIME RAUL SALAMANCA TORRES",
+          "party_code": "5",
+          "party_name": "ALIANZA VERDE",
+          "attributed_se_votes": 10588.28,
+          "candidate_ca_votes": 10387,
+          "party_se_votes_context": 43107.0,
+          "tables_used": 1288
+        },
+        {
+          "candidate_code": "105",
+          "candidate_name": "RAMIRO BARRAGAN ADAME",
+          "party_code": "5",
+          "party_name": "ALIANZA VERDE",
+          "attributed_se_votes": 10423.91,
+          "candidate_ca_votes": 9901,
+          "party_se_votes_context": 43107.0,
+          "tables_used": 1288
+        },
+        {
+          "candidate_code": "106",
+          "candidate_name": "HECTOR DAVID CHAPARRO CHAPARRO",
+          "party_code": "2",
+          "party_name": "CONSERVADOR",
+          "attributed_se_votes": 9373.74,
+          "candidate_ca_votes": 15706,
+          "party_se_votes_context": 17984.0,
+          "tables_used": 1288
+        },
+        {
+          "candidate_code": "102",
+          "candidate_name": "EDUAR ALEXIS TRIANA RINCON",
+          "party_code": "10",
+          "party_name": "CENTRO DEMOCRATICO",
+          "attributed_se_votes": 9286.94,
+          "candidate_ca_votes": 7393,
+          "party_se_votes_context": 36230.0,
+          "tables_used": 1288
+        }
+      ]
+    }
+  },
+  "scatter": {
+    "status": "OK",
+    "stdout": "r=0.960 | pendiente=0.935 | n_mesas=1288"
+  }
+}
